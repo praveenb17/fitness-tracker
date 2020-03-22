@@ -1,0 +1,44 @@
+#security:
+#  oauth2:
+#    client:
+#      clientId: d00215bf8e58cf3b47da
+#      clientSecret: ef16cff57713789b46dd6c5d2ec1b01834f964ab
+#      accessTokenUri: https://github.com/login/oauth/access_token
+#      userAuthorizationUri: https://github.com/login/oauth/authorize
+#      tokenName: oauth_token
+#      authenticationScheme: query
+#      scope: profile email
+#      clientAuthenticationScheme: form
+#    resource:
+#      userInfoUri: https://api.github.com/user
+#      prefer-token-info: true
+
+spring:
+  security:
+      oauth2:
+        client:
+          registration:
+            google:
+              clientId: 108028126505-pn9acijf8suf0j6rm5oemile4lohnn8d.apps.googleusercontent.com
+              clientSecret: YLBONm8p8oJWAjAKPHBW8elW
+              scope: 
+            github:
+              clientId: d00215bf8e58cf3b47da
+              clientSecret: ef16cff57713789b46dd6c5d2ec1b01834f964ab
+              scope: "any"
+                
+
+              datasource:    url: jdbc:mysql://localhost:3306/fitnesstracker?serverTimezone=IST
+    username: root
+    password: 
+  jpa:    hibernate:      ddl-auto: update
+
+
+server:
+  port: 8080
+  
+
+
+
+
+
